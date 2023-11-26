@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>InSync</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="style.css"></script> -->
+  </head>
+  <body>
+    <form>
+      <div class="custom-container">
+        <div class="logo-container">
+          <img class="icon-image" src="/icon.png" alt="icon" />
+          <h3 class="custom-title">InSync</h3>
+        </div>
+        <div class="custom-overlay-section">
+          <h1 class="custom-subtitle">Overlay Color</h1>
+          <div class="custom-grid">
+            <!-- this is new too **Explain tmr -->
+            <box id="change-select" class="custom-color purple">#80008050</box>
+            <box id="change-select" class="custom-color blue">#0000ff50</box>
+            <box id="change-select" class="custom-color yellow">#FFFF0050</box>
+            <box id="change-select" class="custom-color pink">#FFC0CB50</box>
+            <box id="change-select" class="custom-color orange">#FFA50050</box>
+            <box id="change-select" class="custom-color green">#00ff0050</box>
+          </div>
+        </div>
+        <section class="custom-section">
+          <h1 class="custom-font-subtitle">Font Color</h1>
+          <div class="custom-font-grid">
+            <!-- task is add the rest of the colour -->
+            <circle class="custom-font-color red">#ff0000</circle>
+            <circle class="custom-font-color orange">#FFA500</circle>
+            <circle class="custom-font-color yellow">#FFFF00</circle>
+            <circle class="custom-font-color violet">#7F00FF</circle>
+            <circle class="custom-font-color black">#000000</circle>
+            <circle class="custom-font-color white">#ffffff</circle>
+            <circle class="custom-font-color green">#008000</circle>
+            <circle class="custom-font-color blue">#0000ff</circle>
+          </div>
+        </section>
+        <footer>
+          <reset id="reset-button" class="footer-buttons">Reset</reset>
+          <button class="footer-buttons">Save</button>
+        </footer>
+      </div>
+
+      <!-- <label for="color-select">Select a color:</label>
+        <select id="color-select">
+            <option value="#ff000050">Red</option>
+            <option value="#00ff0050">Green</option>
+            <option value="#0000ff50">Blue</option>
+           
+        </select>
+
+        <select id="font-color-select">
+            <option value="#ff0000">Red</option>
+            <option value="#00ff00">Green</option>
+            <option value="#0000ff">Blue</option>
+        </select> -->
+
+      <!-- <input type="range" id="fontSlider" min="10" max="30" value="16"> -->
+    </form>
+    <script src="popup.js"></script>
+    <script src="slider.js"></script>
+    <!-- <script>
+        function swapStyleSheet(sheet) {
+          localStorage.setItem('style', sheet);
+          document.getElementById('pagestyle').setAttribute('href', sheet);
+        }
+        
+        function applyStyleSheet() {
+          // restore style
+          const sheet = localStorage.getItem('style') || 'style.css';
+          document.getElementById('pagestyle').setAttribute('href', sheet);
+        }
+        
+        applyStyleSheet();
+       
+       </script> -->
+  </body>
+</html>

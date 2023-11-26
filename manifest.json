@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "InSync",
+  "image": "icon.png",
+  "description": "Improves accessibility and customizes your viewing experience",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js", "popup.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
